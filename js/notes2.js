@@ -23,3 +23,10 @@ const ul = doucment.querySelector('.items') // picing up the items class on the 
 ul.firstElementChild.textcontent = 
 ul.children[1].innertext = 'brad'
 ul.lastElementChildren.innerhtml =
+
+
+//Functions
+
+fuctions sayhi(){
+    
+}

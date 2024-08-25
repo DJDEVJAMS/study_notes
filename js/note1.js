@@ -16,7 +16,7 @@ console.log(score);
 //Data Types
 //String,Numbers,Boolean,Null, undefined and symbols
 
-const name = 'John';
+const namePerson = 'John';
 //strings can have signle or double quotes but should be consitent in script.
 const age = 30; // number
 const rating = 4.5; //number
@@ -24,12 +24,56 @@ const isCool = true; //boolean
 const x = null;
 const y = undefined; let z; // are both undefield 
 
-console.log(typeof age) //shows Data Types
+console.log(typeof age); //shows Data Types
+
+// Single or Double Quotes
+let singleQuoteString = 'Hello, Alice!';
+let doubleQuoteString = "Hello, Bob!";
+
+// Using backticks for interpolation
+let nickname = 'Charlie';
+let greeting = `Hello, ${nickname}!`; // Output: Hello, Charlie!
+
+// Using backticks for multi-line string
+let multiLineString = `This is a
+multi-line string
+using backticks.`;
+
+console.log(singleQuoteString); // Output: Hello, Alice!
+console.log(doubleQuoteString); // Output: Hello, Bob!
+console.log(greeting); // Output: Hello, Charlie!
+console.log(multiLineString); // Output: This is a
+                             // multi-line string
+                             // using backticks.
 
 //Concatenation Types
-console.logs('My name is ' + name + 'and I am ' + age);
+console.logs(`My name is ${namePerson}and I am ${age}`);
 //Template String ]aka Template literals  is the new way 
-console.log(`My name is ${name} and I am ${age}`)
+console.log(`My name is ${namePerson} and I am ${age}`)
+
+//================================Self Work===============================
+// Write Your JavaScript Code Here
+
+let VALUE_STORED_IN_VARIABLE_NAME = "Alex";
+let VALUE_STORED_IN_VARIABLE_PETS = 1;
+let VALUE_STORED_IN_VARIABLE_FUNFACT = "i've never coded";
+
+console.log(`My name is ${VALUE_STORED_IN_VARIABLE_NAME}.`);
+console.log(`I have ${VALUE_STORED_IN_VARIABLE_PETS} pet(s).`);
+console.log(`Fun fact: ${VALUE_STORED_IN_VARIABLE_FUNFACT}.`);
+console.log("my name is"+VALUE_STORED_IN_VARIABLE_NAME + "." + "I have"+ VALUE_STORED_IN_VARIABLE_PETS + "." + "Fun Fact:"+ VALUE_STORED_IN_VARIABLE_FUNFACT + ".");
+console.log("The last example is showing cadnation. But the previous 3 are template literals (recommended).")
+
+// {} // Curly braces - Note an object/varible for temporal literals 
+// [ ] // Square Brackets - used for arrays
+// () // Parenthesis - AKA Parens work for calling fuctions and etc.
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+// Q: why does the whole console log fail if the error is beyond the line of code ran? 
+
+
+
 
 // Strings Properties and methods 
 const s = 'Hello World';
@@ -57,7 +101,7 @@ console.log(fruits.indexOf('oranges'))
 
 // Object litera are key value pairs that
 
-const person = {
+const newPerson = {
     firstName: 'John',
     lastName: 'Doe',
     age: 30,
@@ -69,15 +113,15 @@ const person = {
     }
 }
 
-console.log(person.hobbies[1]) // extracts the moves from the Object Liteal above
+console.log(newPerson.hobbies[1]) // extracts the moves from the Object Liteal above
 
-const { firstName, lastName } = person; // Destructing 
+const { firstName, lastName } = newPerson; // Destructing 
 
 console.log(firstname); // destructering 
 
-person.email = "john@outlook.com"
+newPerson.email = "john@outlook.com"
 
-console.log(person); // Email prperty has been added. 
+console.log(newPerson); // Email prperty has been added. 
 
 const todos = [ // Array with three objects. Arrays always start with []
     {
@@ -153,7 +197,7 @@ const todoCompleted = todos.filter(function (todo) {
 console.log(todoCompleted);
 
 //chaining array methods. just get map the text from before. just an array of the completed text.
-const todoCompleted = todos.filter(function (todo) {
+const todoCompleted1 = todos.filter(function (todo) {
     return todo.isCompleted === true;
 }).map(function (todo) {
     return todo.text;
