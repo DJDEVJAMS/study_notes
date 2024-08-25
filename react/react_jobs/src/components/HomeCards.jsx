@@ -1,5 +1,6 @@
 import React from 'react'
-import Card from './Card'
+import Card from './Card';
+
 const HomeCard = () => {
   return (
  <>
@@ -13,8 +14,7 @@ const HomeCard = () => {
         </p>
         <a
           href="/jobs.html"
-          className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
-        >
+          className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700">
           Browse Jobs
         </a>
       </Card>
@@ -25,8 +25,7 @@ const HomeCard = () => {
         </p>
         <a
           href="/add-job.html"
-          className="inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600"
-        >
+          className="inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600">
           Add Job
         </a>
       </Card>
@@ -34,7 +33,7 @@ const HomeCard = () => {
   </div>
 </section>
  </>
-  )
-}
+  );
+};
 
 export default HomeCard
